@@ -1,0 +1,142 @@
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+	<filter>
+		<filter-name>loginFilter</filter-name>
+		<filter-class>com.red.alumni.util.LoginFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>loginFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<!-- 过滤器 -->
+	<filter>
+		<filter-name>CharacterEncodingFilter</filter-name>
+		<filter-class>com.red.alumni.util.CharacterEncodingFilter
+		</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.red.alumni.servlet.LoginServlet</servlet-class>
+	</servlet>
+  <servlet>
+    <servlet-name>SavestuinfoServlet</servlet-name>
+    <servlet-class>com.red.alumni.servlet.SavestuinfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckPwd</servlet-name>
+    <servlet-class>com.red.alumni.servlet.CheckPwd</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ContentServlet</servlet-name>
+    <servlet-class>com.red.alumni.servlet.ContentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ExitSystem</servlet-name>
+    <servlet-class>com.red.alumni.servlet.ExitSystem</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DealReportServlet</servlet-name>
+    <servlet-class>com.red.alumni.servlet.DealReportServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>QueryAll</servlet-name>
+    <servlet-class>com.red.alumni.servlet.QueryAll</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddStu</servlet-name>
+    <servlet-class>com.red.alumni.servlet.AddStu</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddTea</servlet-name>
+    <servlet-class>com.red.alumni.servlet.AddTea</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SavaTea</servlet-name>
+    <servlet-class>com.red.alumni.servlet.SavaTea</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TeaDeal</servlet-name>
+    <servlet-class>com.red.alumni.servlet.TeaDeal</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+	<filter-mapping>
+		<filter-name>CharacterEncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+	</filter-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SavestuinfoServlet</servlet-name>
+    <url-pattern>/SavestuinfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckPwd</servlet-name>
+    <url-pattern>/CheckPwd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ContentServlet</servlet-name>
+    <url-pattern>/ContentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ExitSystem</servlet-name>
+    <url-pattern>/ExitSystem</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DealReportServlet</servlet-name>
+    <url-pattern>/DealReportServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QueryAll</servlet-name>
+    <url-pattern>/QueryAll</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddStu</servlet-name>
+    <url-pattern>/AddStu</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddTea</servlet-name>
+    <url-pattern>/AddTea</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SavaTea</servlet-name>
+    <url-pattern>/SavaTea</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TeaDeal</servlet-name>
+    <url-pattern>/TeaDeal</url-pattern>
+  </servlet-mapping>
+</web-app>
